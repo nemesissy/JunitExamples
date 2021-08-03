@@ -9,8 +9,6 @@ https://www.amsmeteors.org
 ### Pre-requisites ###
 
 * Im using IJ to create
-* Im creating on a MAC
-* I'm using MAC chromedriver: https://chromedriver.chromium.org/downloads
 * Im using GRADLE to build
 
 ### Run all Tests
