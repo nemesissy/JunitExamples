@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <RollingFile name="JunitExamples" fileName="logs/junitExamples.log"
+                     filePattern="logs/${date:yyyy-MM}/configNanny-%d{MM-dd-yyyy}-%i.log.gz">
+            <!--<LevelRangeFilter minLevel="INFO" maxLevel="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>-->
+            <PatternLayout><Pattern>%d [%t] %p %c - %m%n</Pattern></PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="19500KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+        <Root level="DEBUG">
+            <AppenderRef ref="Console" level="all"/>
+        </Root>
+        <Logger name="com.nemesissy" additivity="true">
+            <AppenderRef ref="JunitExamples" />
+        </Logger>
+    </Loggers>
+</Configuration>
