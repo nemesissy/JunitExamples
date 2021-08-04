@@ -22,10 +22,10 @@ $ ./gradlew build
 ?
 
 ### Usages
-Page Object Modeling
-Collections
-Waiting on actionalbe elements
-Asserting
-Logging
-Reporting
-Testcase Management Integration
+* Page Object Modeling
+* Collections
+* Waiting on actionalbe elements
+* Asserting
+* Logging
+* Reporting
+* Testcase Management Integration
