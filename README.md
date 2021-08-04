@@ -21,3 +21,11 @@ $ ./gradlew build
 ### Location of the HTML report
 ?
 
+### Usages
+Page Object Modeling
+Collections
+Waiting on actionalbe elements
+Asserting
+Logging
+Reporting
+Testcase Management Integration
