@@ -19,3 +19,14 @@ dependencies {
     compile group: 'io.github.lukehutch', name: 'fast-classpath-scanner', version: '2.0.17'
 
 }
+
+task junitExamplesJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Junit Examples',
+                'Implementation-Version': "$project.version",
+                'Main-Class': 'com.nemesissy.TestRunnerRunlist'
+    }
+    baseName = "junitExamples" + '-all'
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}

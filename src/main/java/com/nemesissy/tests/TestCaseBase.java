@@ -14,8 +14,8 @@ public class TestCaseBase extends TestCase {
 
     WebDriver driver = null;
     final static Logger log = LogManager.getLogger(TestCaseBase.class);
-    private String chromeDriverMACLocation = "/Users/clandry/chromedriver/chromedriver";
-    private String chromeDriverWINLocation = "C:\\Users\\clandry\\chromedriver\\chromedriver.exe";
+    private String chromeDriverMACLocation = "/Users/nemesissy/chromedriver/chromedriver";
+    private String chromeDriverWINLocation = "C:\\Users\\nemesissy\\chromedriver\\chromedriver.exe";
 
     public void setUp() {
         log.debug("setup() >>> Setup Start for [" + this.toString() + "]");
