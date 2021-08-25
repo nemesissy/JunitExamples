@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 import org.openqa.selenium.By;
 
-public class Home {
+public class    Home {
 
     private static final Logger log = LogManager.getLogger("Home");
     private WebDriver driver = null;
